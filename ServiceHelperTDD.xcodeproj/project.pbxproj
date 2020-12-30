@@ -18,6 +18,7 @@
 		3155B077259C50D3003479AF /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155B076259C50D3003479AF /* MovieModel.swift */; };
 		3155B079259C5873003479AF /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 3155B078259C5873003479AF /* Response.json */; };
 		3155B07B259C5902003479AF /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155B07A259C5902003479AF /* JsonReader.swift */; };
+		3155B080259C6DF6003479AF /* MovieServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155B07F259C6DF6003479AF /* MovieServiceHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		3155B076259C50D3003479AF /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		3155B078259C5873003479AF /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
 		3155B07A259C5902003479AF /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		3155B07F259C6DF6003479AF /* MovieServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +89,15 @@
 		3155B051259C5052003479AF /* ServiceHelperTDD */ = {
 			isa = PBXGroup;
 			children = (
-				3155B052259C5052003479AF /* AppDelegate.swift */,
-				3155B054259C5052003479AF /* SceneDelegate.swift */,
+				3155B07C259C6458003479AF /* Delegates */,
 				3155B056259C5052003479AF /* ViewController.swift */,
 				3155B076259C50D3003479AF /* MovieModel.swift */,
-				3155B058259C5052003479AF /* Main.storyboard */,
-				3155B05B259C5054003479AF /* Assets.xcassets */,
-				3155B05D259C5054003479AF /* LaunchScreen.storyboard */,
-				3155B060259C5054003479AF /* Info.plist */,
 				3155B074259C50AD003479AF /* NetworkHelper.swift */,
-				3155B07A259C5902003479AF /* JsonReader.swift */,
-				3155B078259C5873003479AF /* Response.json */,
+				3155B07F259C6DF6003479AF /* MovieServiceHelper.swift */,
+				3155B07D259C6DB1003479AF /* Utilities */,
+				3155B07E259C6DC4003479AF /* Views */,
+				3155B05B259C5054003479AF /* Assets.xcassets */,
+				3155B060259C5054003479AF /* Info.plist */,
 			);
 			path = ServiceHelperTDD;
 			sourceTree = "<group>";
@@ -109,6 +109,33 @@
 				3155B06B259C5054003479AF /* Info.plist */,
 			);
 			path = ServiceHelperTDDTests;
+			sourceTree = "<group>";
+		};
+		3155B07C259C6458003479AF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3155B052259C5052003479AF /* AppDelegate.swift */,
+				3155B054259C5052003479AF /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3155B07D259C6DB1003479AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3155B07A259C5902003479AF /* JsonReader.swift */,
+				3155B078259C5873003479AF /* Response.json */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3155B07E259C6DC4003479AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3155B058259C5052003479AF /* Main.storyboard */,
+				3155B05D259C5054003479AF /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3155B080259C6DF6003479AF /* MovieServiceHelper.swift in Sources */,
 				3155B075259C50AD003479AF /* NetworkHelper.swift in Sources */,
 				3155B057259C5052003479AF /* ViewController.swift in Sources */,
 				3155B077259C50D3003479AF /* MovieModel.swift in Sources */,

@@ -30,11 +30,10 @@ class ServiceHelperTDDTests: XCTestCase {
         }
     }
     
-    
+    //cases handled in network call
     //-servererror
     //-statuscode
     //-jsonparse
-    //-empty
 }
 
 

@@ -82,37 +82,3 @@ struct NetworkHelper: NetworkHelperProtocol {
     }
     
 }
-
-class MovieServiceHelper {
-    
-    var networkHelper: NetworkHelperProtocol!
-    
-    init(networkHelper: NetworkHelperProtocol) {
-        self.networkHelper = networkHelper
-    }
-    
-    func getMoviesData(on page: Int, completion: @escaping MovieResponse) {
-        
-        guard page > 0 && page < 1001 else {
-            completion(nil, .invalidURLRequest)
-            return
-        }
-        
-        networkHelper.callMoviesData(on: page) {
-            (data, error) in
-            if let data = data {
-                if data.movies.isEmpty {
-                    completion(nil, .emptyResponse)
-                }
-                else {
-                    completion(data,nil)
-                }
-            }
-            else {
-                completion(data,error)
-            }
-        }
-        
-    }
-    
-}
